@@ -1,0 +1,55 @@
+{
+  "report_period": {
+    "start": "2025-11-25",
+    "end": "2025-12-02",
+    "report_date": "2025-12-02"
+  },
+  "section1_projects": [
+    {
+      "date": "日期（如：12月1日）",
+      "region": "地区/项目名称（加粗格式：<strong>国家 — 项目名称</strong>）",
+      "details": "关键信息：项目规模、投资额、建设内容、进展情况等",
+      "impact": "影响解读：对建筑业、设备需求、市场趋势的影响"
+    }
+  ],
+  "section2_industry": [
+    {
+      "date": "日期",
+      "topic": "动态主题（加粗格式：<strong>主题</strong>）",
+      "content": "主要内容：法规变化、技术趋势、市场数据等",
+      "significance": "行业意义：对行业发展的影响和意义"
+    }
+  ],
+  "section3_manufacturers": [
+    {
+      "date": "日期",
+      "company": "企业名称（加粗格式：<strong>公司名</strong>）",
+      "event": "事件描述：新产品、合作、投资、并购等",
+      "analysis": "重点解读：对企业和行业的影响"
+    }
+  ],
+  "section4_rental": [
+    {
+      "date": "日期",
+      "company": "公司名称（加粗格式：<strong>公司名（地区）</strong>）",
+      "event": "事件描述：并购、扩张、采购、合作等",
+      "notes": "观察：对租赁市场和行业格局的影响"
+    }
+  ],
+  "section5_synthesis": [
+    "综合观察要点1：重要趋势和变化",
+    "综合观察要点2：市场供需分析",
+    "综合观察要点3：技术创新进展",
+    "综合观察要点4：区域市场动态",
+    "综合观察要点5：政策环境影响"
+  ],
+  "section6_watchlist": [
+    {
+      "focus": "关注事项（加粗格式：<strong>事项</strong>）",
+      "timing": "时间/动向：具体时间或事件",
+      "impact": "可能影响：对行业和市场的影响"
+    }
+  ],
+  "section1_summary": "第一部分的小结：总结本周重大工程项目和宏观政策动态",
+  "notes": "填写说明：\n1. 日期格式：使用中文日期（如：12月1日）或英文日期（如：Dec 1）\n2. 加粗格式：使用HTML标签 <strong>文本</strong>\n3. 每个section至少填写3-5条新闻\n4. 确保信息的准确性和时效性"
+}
