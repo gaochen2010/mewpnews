@@ -326,6 +326,328 @@
                 height: 300px;
             }
         }
+
+        /* 数据管理样式 */
+        .data-management {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
+        }
+
+        .data-section {
+            margin-bottom: 30px;
+            padding: 25px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+
+        .data-section h4 {
+            color: #495057;
+            margin-bottom: 20px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .data-section h4 .icon {
+            font-size: 1.2em;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            margin-bottom: 6px;
+            font-size: 0.9em;
+            color: #495057;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group select {
+            padding: 10px 14px;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            font-size: 1em;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .upload-area {
+            border: 2px dashed #667eea;
+            border-radius: 12px;
+            padding: 40px;
+            text-align: center;
+            background: white;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .upload-area:hover {
+            background: rgba(102, 126, 234, 0.05);
+            border-color: #764ba2;
+        }
+
+        .upload-area.dragover {
+            background: rgba(102, 126, 234, 0.1);
+            border-color: #764ba2;
+        }
+
+        .upload-area .upload-icon {
+            font-size: 3em;
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+
+        .upload-area p {
+            color: #6c757d;
+            margin-bottom: 10px;
+        }
+
+        .upload-area .file-types {
+            font-size: 0.85em;
+            color: #adb5bd;
+        }
+
+        .upload-area input[type="file"] {
+            display: none;
+        }
+
+        .data-preview {
+            margin-top: 20px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        .data-preview table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9em;
+        }
+
+        .data-preview th,
+        .data-preview td {
+            padding: 10px;
+            border: 1px solid #e9ecef;
+            text-align: left;
+        }
+
+        .data-preview th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            position: sticky;
+            top: 0;
+        }
+
+        .data-preview tr:hover {
+            background: #f8f9fa;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn-success {
+            background: linear-gradient(135deg, #28a745 0%, #218838 100%);
+            color: white;
+        }
+
+        .btn-success:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(40, 167, 69, 0.4);
+        }
+
+        .btn-danger {
+            background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+            color: white;
+        }
+
+        .btn-danger:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(220, 53, 69, 0.4);
+        }
+
+        .btn-warning {
+            background: linear-gradient(135deg, #ffc107 0%, #e0a800 100%);
+            color: #212529;
+        }
+
+        .btn-warning:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255, 193, 7, 0.4);
+        }
+
+        .alert {
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .alert-success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .alert-error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        .alert-info {
+            background: #d1ecf1;
+            color: #0c5460;
+            border: 1px solid #bee5eb;
+        }
+
+        .current-data-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .current-data-info .info-text {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .current-data-info .data-count {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        .editable-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .editable-table th,
+        .editable-table td {
+            padding: 12px;
+            border: 1px solid #e9ecef;
+        }
+
+        .editable-table th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .editable-table input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #e9ecef;
+            border-radius: 4px;
+        }
+
+        .editable-table input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .editable-table .delete-row {
+            background: none;
+            border: none;
+            color: #dc3545;
+            cursor: pointer;
+            font-size: 1.2em;
+            padding: 5px;
+        }
+
+        .editable-table .delete-row:hover {
+            color: #c82333;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal.show {
+            display: flex;
+        }
+
+        .modal-content {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            max-width: 500px;
+            width: 90%;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .modal-content h3 {
+            margin-bottom: 15px;
+            color: #495057;
+        }
+
+        .modal-content p {
+            color: #6c757d;
+            margin-bottom: 20px;
+        }
+
+        .modal-actions {
+            display: flex;
+            gap: 10px;
+            justify-content: flex-end;
+        }
+
+        .template-download {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 16px;
+            background: #e9ecef;
+            color: #495057;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 0.9em;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .template-download:hover {
+            background: #dee2e6;
+        }
     </style>
 </head>
 <body>
@@ -391,11 +713,12 @@
                 <button class="tab active" onclick="switchTab('chart')">价格走势图</button>
                 <button class="tab" onclick="switchTab('table')">数据表格</button>
                 <button class="tab" onclick="switchTab('comparison')">设备对比</button>
+                <button class="tab" onclick="switchTab('dataManage')">📊 数据管理</button>
             </div>
 
             <div id="chartTab" class="tab-content active">
                 <div class="chart-container">
-                    <div class="chart-title">月度租金价格走势</div>
+                    <div class="chart-title">月度租金价格走势 <span id="chartDataSource" style="font-size: 0.7em; color: #667eea; font-weight: normal;"></span></div>
                     <div class="chart-wrapper">
                         <canvas id="priceChart"></canvas>
                     </div>
@@ -433,6 +756,147 @@
                 </div>
             </div>
 
+            <div id="dataManageTab" class="tab-content">
+                <div class="data-management">
+                    <div class="chart-title">数据管理中心</div>
+                    
+                    <!-- 当前数据状态 -->
+                    <div class="current-data-info" id="dataStatusInfo">
+                        <div class="info-text">
+                            <span>📈</span>
+                            <span id="dataSourceText">当前使用: 模拟数据</span>
+                        </div>
+                        <div class="data-count" id="dataCountText">共 0 条记录</div>
+                    </div>
+
+                    <!-- 提示信息区域 -->
+                    <div id="alertContainer"></div>
+
+                    <!-- 文件上传区域 -->
+                    <div class="data-section">
+                        <h4><span class="icon">📤</span>上传数据文件</h4>
+                        <p style="color: #6c757d; margin-bottom: 15px; font-size: 0.9em;">
+                            支持上传CSV格式文件，上传后将覆盖当前设备类型和地区的数据。
+                        </p>
+                        <div class="btn-group" style="margin-bottom: 15px;">
+                            <span class="template-download" onclick="downloadTemplate()">
+                                📥 下载数据模板
+                            </span>
+                        </div>
+                        <div class="upload-area" id="uploadArea" onclick="document.getElementById('fileInput').click();">
+                            <div class="upload-icon">📁</div>
+                            <p><strong>点击或拖拽文件到此处上传</strong></p>
+                            <p class="file-types">支持格式: CSV (逗号分隔值文件)</p>
+                            <input type="file" id="fileInput" accept=".csv" onchange="handleFileUpload(event)">
+                        </div>
+                        <div class="data-preview" id="uploadPreview" style="display: none;">
+                            <h5 style="margin-bottom: 10px; color: #495057;">📋 预览上传数据</h5>
+                            <table id="previewTable">
+                                <thead>
+                                    <tr>
+                                        <th>月份</th>
+                                        <th>月租金 (¥)</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="previewTableBody"></tbody>
+                            </table>
+                            <div class="btn-group" style="margin-top: 15px;">
+                                <button class="btn btn-success" onclick="confirmUpload()">✓ 确认导入</button>
+                                <button class="btn btn-secondary" onclick="cancelUpload()">✗ 取消</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 手动填报数据 -->
+                    <div class="data-section">
+                        <h4><span class="icon">✏️</span>手动填报数据</h4>
+                        <p style="color: #6c757d; margin-bottom: 15px; font-size: 0.9em;">
+                            手动添加或修改租金数据，保存后将覆盖当前设备类型和地区的原有数据。
+                        </p>
+                        
+                        <!-- 添加单条数据表单 -->
+                        <div class="form-grid" style="margin-bottom: 20px;">
+                            <div class="form-group">
+                                <label for="inputYear">年份</label>
+                                <select id="inputYear">
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputMonth">月份</label>
+                                <select id="inputMonth">
+                                    <option value="1">1月</option>
+                                    <option value="2">2月</option>
+                                    <option value="3">3月</option>
+                                    <option value="4">4月</option>
+                                    <option value="5">5月</option>
+                                    <option value="6">6月</option>
+                                    <option value="7">7月</option>
+                                    <option value="8">8月</option>
+                                    <option value="9">9月</option>
+                                    <option value="10">10月</option>
+                                    <option value="11">11月</option>
+                                    <option value="12">12月</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPrice">月租金 (¥)</label>
+                                <input type="number" id="inputPrice" placeholder="请输入金额" min="0" step="100">
+                            </div>
+                            <div class="form-group" style="justify-content: flex-end;">
+                                <label>&nbsp;</label>
+                                <button class="btn btn-primary" onclick="addSingleEntry()">➕ 添加数据</button>
+                            </div>
+                        </div>
+
+                        <!-- 当前数据编辑表格 -->
+                        <div style="max-height: 400px; overflow-y: auto;">
+                            <table class="editable-table" id="editableDataTable">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 35%;">月份</th>
+                                        <th style="width: 45%;">月租金 (¥)</th>
+                                        <th style="width: 20%;">操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="editableTableBody">
+                                    <!-- 动态填充 -->
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="btn-group" style="margin-top: 20px;">
+                            <button class="btn btn-success" onclick="saveManualData()">💾 保存数据</button>
+                            <button class="btn btn-warning" onclick="loadCurrentData()">🔄 重新加载</button>
+                            <button class="btn btn-danger" onclick="showClearConfirm()">🗑️ 清除自定义数据</button>
+                        </div>
+                    </div>
+
+                    <!-- 数据说明 -->
+                    <div class="data-section" style="background: #e8f4fd;">
+                        <h4><span class="icon">💡</span>使用说明</h4>
+                        <ul style="color: #495057; line-height: 1.8; padding-left: 20px; font-size: 0.9em;">
+                            <li><strong>数据范围</strong>：每组数据对应特定的设备类型和地区组合</li>
+                            <li><strong>上传文件</strong>：CSV文件格式，第一列为月份（格式：2024-01），第二列为月租金</li>
+                            <li><strong>手动填报</strong>：可逐条添加数据，或直接在表格中修改现有数据</li>
+                            <li><strong>数据覆盖</strong>：保存或导入数据后会覆盖当前设备类型和地区的原有数据</li>
+                            <li><strong>数据存储</strong>：数据保存在浏览器本地存储中，清除浏览器数据可能会丢失</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 确认清除弹窗 -->
+            <div class="modal" id="clearConfirmModal">
+                <div class="modal-content">
+                    <h3>⚠️ 确认清除数据</h3>
+                    <p>确定要清除当前设备类型和地区的自定义数据吗？清除后将恢复使用模拟数据。</p>
+                    <div class="modal-actions">
+                        <button class="btn btn-secondary" onclick="hideClearConfirm()">取消</button>
+                        <button class="btn btn-danger" onclick="clearCustomData()">确认清除</button>
+                    </div>
+                </div>
+            </div>
+
             <div class="device-info">
                 <h4 id="deviceName">剪叉式高空作业平台 (6m平台高度)</h4>
                 <p id="deviceDescription">剪叉式高空作业平台是一种常见的高空作业设备，具有稳定性好、载重能力强等特点，适用于室内外各种作业环境。</p>
@@ -441,8 +905,81 @@
     </div>
 
     <script>
-        // 模拟数据生成函数
+        // ==================== 数据存储管理 ====================
+        const STORAGE_KEY = 'rental_price_data';
+        let pendingUploadData = null; // 待确认的上传数据
+
+        // 获取存储的自定义数据
+        function getStoredData() {
+            try {
+                const stored = localStorage.getItem(STORAGE_KEY);
+                return stored ? JSON.parse(stored) : {};
+            } catch (e) {
+                console.error('读取存储数据失败:', e);
+                return {};
+            }
+        }
+
+        // 保存数据到本地存储
+        function saveToStorage(deviceType, region, data) {
+            try {
+                const stored = getStoredData();
+                const key = `${deviceType}_${region}`;
+                stored[key] = {
+                    data: data,
+                    updatedAt: new Date().toISOString()
+                };
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(stored));
+                return true;
+            } catch (e) {
+                console.error('保存数据失败:', e);
+                return false;
+            }
+        }
+
+        // 获取特定设备和地区的自定义数据
+        function getCustomData(deviceType, region) {
+            const stored = getStoredData();
+            const key = `${deviceType}_${region}`;
+            return stored[key] ? stored[key].data : null;
+        }
+
+        // 清除特定设备和地区的自定义数据
+        function removeCustomData(deviceType, region) {
+            try {
+                const stored = getStoredData();
+                const key = `${deviceType}_${region}`;
+                delete stored[key];
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(stored));
+                return true;
+            } catch (e) {
+                console.error('删除数据失败:', e);
+                return false;
+            }
+        }
+
+        // 检查是否有自定义数据
+        function hasCustomData(deviceType, region) {
+            const customData = getCustomData(deviceType, region);
+            return customData && customData.length > 0;
+        }
+
+        // ==================== 模拟数据生成函数 ====================
         function generatePriceData(deviceType, region, months = 12) {
+            // 首先检查是否有自定义数据
+            const customData = getCustomData(deviceType, region);
+            if (customData && customData.length > 0) {
+                // 使用自定义数据
+                const sortedData = [...customData].sort((a, b) => new Date(a.month) - new Date(b.month));
+                const labels = sortedData.map(item => {
+                    const date = new Date(item.month + '-01');
+                    return date.toLocaleDateString('zh-CN', { year: 'numeric', month: 'short' });
+                });
+                const data = sortedData.map(item => item.price);
+                return { labels, data, isCustom: true };
+            }
+
+            // 使用模拟数据
             const basePrices = {
                 'scissor': { base: 3500, variance: 500 },
                 'articulated': { base: 8500, variance: 1200 },
@@ -482,7 +1019,7 @@
                 data.push(Math.round(price));
             }
 
-            return { labels, data };
+            return { labels, data, isCustom: false };
         }
 
         // 设备信息
@@ -685,8 +1222,15 @@
             const deviceType = document.getElementById('deviceType').value;
             const region = document.getElementById('region').value;
             
-            const { labels, data } = generatePriceData(deviceType, region);
+            const { labels, data, isCustom } = generatePriceData(deviceType, region);
             currentData = { labels, data };
+            
+            // 更新图表数据来源显示
+            const chartDataSource = document.getElementById('chartDataSource');
+            if (chartDataSource) {
+                chartDataSource.textContent = isCustom ? '(自定义数据)' : '(模拟数据)';
+                chartDataSource.style.color = isCustom ? '#28a745' : '#667eea';
+            }
             
             // 更新数据表格
             updateDataTable();
@@ -807,10 +1351,382 @@
             });
         }
 
+        // ==================== 数据管理功能 ====================
+        
+        // 显示提示信息
+        function showAlert(message, type = 'info') {
+            const container = document.getElementById('alertContainer');
+            const alertHtml = `
+                <div class="alert alert-${type}">
+                    <span>${type === 'success' ? '✓' : type === 'error' ? '✗' : 'ℹ'}</span>
+                    <span>${message}</span>
+                </div>
+            `;
+            container.innerHTML = alertHtml;
+            setTimeout(() => {
+                container.innerHTML = '';
+            }, 3000);
+        }
+
+        // 更新数据状态显示
+        function updateDataStatus() {
+            const deviceType = document.getElementById('deviceType').value;
+            const region = document.getElementById('region').value;
+            const customData = getCustomData(deviceType, region);
+            
+            const statusText = document.getElementById('dataSourceText');
+            const countText = document.getElementById('dataCountText');
+            
+            if (customData && customData.length > 0) {
+                statusText.textContent = '当前使用: 自定义数据';
+                countText.textContent = `共 ${customData.length} 条记录`;
+            } else {
+                statusText.textContent = '当前使用: 模拟数据';
+                countText.textContent = '共 12 条记录';
+            }
+        }
+
+        // 初始化年份选择器
+        function initYearSelector() {
+            const yearSelect = document.getElementById('inputYear');
+            const currentYear = new Date().getFullYear();
+            yearSelect.innerHTML = '';
+            for (let year = currentYear; year >= currentYear - 5; year--) {
+                const option = document.createElement('option');
+                option.value = year;
+                option.textContent = year + '年';
+                yearSelect.appendChild(option);
+            }
+        }
+
+        // 下载CSV模板
+        function downloadTemplate() {
+            const deviceType = document.getElementById('deviceType').value;
+            const region = document.getElementById('region').value;
+            const deviceTypeName = document.getElementById('deviceType').options[document.getElementById('deviceType').selectedIndex].text;
+            const regionName = document.getElementById('region').options[document.getElementById('region').selectedIndex].text;
+            
+            let csv = '月份,月租金\n';
+            const now = new Date();
+            for (let i = 11; i >= 0; i--) {
+                const date = new Date(now.getFullYear(), now.getMonth() - i, 1);
+                const month = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`;
+                csv += `${month},\n`;
+            }
+            
+            const blob = new Blob(['\ufeff' + csv], { type: 'text/csv;charset=utf-8;' });
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = `租金数据模板_${deviceTypeName}_${regionName}.csv`;
+            link.click();
+        }
+
+        // 处理文件上传
+        function handleFileUpload(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            if (!file.name.endsWith('.csv')) {
+                showAlert('请上传CSV格式的文件', 'error');
+                return;
+            }
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                try {
+                    const content = e.target.result;
+                    const lines = content.split('\n').filter(line => line.trim());
+                    
+                    // 跳过表头
+                    const dataLines = lines.slice(1);
+                    const parsedData = [];
+                    
+                    for (const line of dataLines) {
+                        const parts = line.split(',');
+                        if (parts.length >= 2) {
+                            const month = parts[0].trim();
+                            const price = parseFloat(parts[1].trim());
+                            
+                            // 验证月份格式 (YYYY-MM)
+                            if (/^\d{4}-\d{2}$/.test(month) && !isNaN(price) && price > 0) {
+                                parsedData.push({ month, price: Math.round(price) });
+                            }
+                        }
+                    }
+
+                    if (parsedData.length === 0) {
+                        showAlert('未能解析到有效数据，请检查文件格式', 'error');
+                        return;
+                    }
+
+                    // 保存待确认数据并显示预览
+                    pendingUploadData = parsedData;
+                    showUploadPreview(parsedData);
+                    
+                } catch (err) {
+                    console.error('解析文件失败:', err);
+                    showAlert('解析文件失败，请检查文件格式', 'error');
+                }
+            };
+            reader.readAsText(file);
+            
+            // 清空file input，允许重复上传同一文件
+            event.target.value = '';
+        }
+
+        // 显示上传预览
+        function showUploadPreview(data) {
+            const preview = document.getElementById('uploadPreview');
+            const tbody = document.getElementById('previewTableBody');
+            tbody.innerHTML = '';
+            
+            const sortedData = [...data].sort((a, b) => new Date(a.month) - new Date(b.month));
+            
+            for (const item of sortedData) {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${item.month}</td>
+                    <td>¥${item.price.toLocaleString()}</td>
+                `;
+                tbody.appendChild(row);
+            }
+            
+            preview.style.display = 'block';
+            document.getElementById('uploadArea').style.display = 'none';
+        }
+
+        // 确认上传
+        function confirmUpload() {
+            if (!pendingUploadData) return;
+            
+            const deviceType = document.getElementById('deviceType').value;
+            const region = document.getElementById('region').value;
+            
+            if (saveToStorage(deviceType, region, pendingUploadData)) {
+                showAlert(`成功导入 ${pendingUploadData.length} 条数据`, 'success');
+                pendingUploadData = null;
+                cancelUpload();
+                updateChart();
+                updateDataStatus();
+                loadCurrentData();
+            } else {
+                showAlert('保存数据失败', 'error');
+            }
+        }
+
+        // 取消上传
+        function cancelUpload() {
+            pendingUploadData = null;
+            document.getElementById('uploadPreview').style.display = 'none';
+            document.getElementById('uploadArea').style.display = 'block';
+        }
+
+        // 拖拽上传功能
+        function initDragDrop() {
+            const uploadArea = document.getElementById('uploadArea');
+            
+            ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+                uploadArea.addEventListener(eventName, preventDefaults, false);
+            });
+
+            function preventDefaults(e) {
+                e.preventDefault();
+                e.stopPropagation();
+            }
+
+            ['dragenter', 'dragover'].forEach(eventName => {
+                uploadArea.addEventListener(eventName, () => {
+                    uploadArea.classList.add('dragover');
+                }, false);
+            });
+
+            ['dragleave', 'drop'].forEach(eventName => {
+                uploadArea.addEventListener(eventName, () => {
+                    uploadArea.classList.remove('dragover');
+                }, false);
+            });
+
+            uploadArea.addEventListener('drop', (e) => {
+                const files = e.dataTransfer.files;
+                if (files.length > 0) {
+                    handleFileUpload({ target: { files: files } });
+                }
+            }, false);
+        }
+
+        // 加载当前数据到编辑表格
+        function loadCurrentData() {
+            const deviceType = document.getElementById('deviceType').value;
+            const region = document.getElementById('region').value;
+            const tbody = document.getElementById('editableTableBody');
+            tbody.innerHTML = '';
+            
+            // 获取数据（自定义或模拟）
+            let dataToLoad;
+            const customData = getCustomData(deviceType, region);
+            
+            if (customData && customData.length > 0) {
+                dataToLoad = [...customData].sort((a, b) => new Date(b.month) - new Date(a.month));
+            } else {
+                // 从模拟数据生成
+                const now = new Date();
+                dataToLoad = [];
+                for (let i = 0; i < 12; i++) {
+                    const date = new Date(now.getFullYear(), now.getMonth() - i, 1);
+                    const month = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`;
+                    const { data } = generatePriceData(deviceType, region, 12);
+                    dataToLoad.push({ month, price: data[11 - i] });
+                }
+            }
+            
+            for (const item of dataToLoad) {
+                addTableRow(item.month, item.price);
+            }
+            
+            updateDataStatus();
+        }
+
+        // 添加表格行
+        function addTableRow(month, price) {
+            const tbody = document.getElementById('editableTableBody');
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td><input type="month" value="${month}" class="month-input"></td>
+                <td><input type="number" value="${price}" min="0" step="100" class="price-input"></td>
+                <td><button class="delete-row" onclick="deleteRow(this)">🗑️</button></td>
+            `;
+            tbody.appendChild(row);
+        }
+
+        // 删除表格行
+        function deleteRow(btn) {
+            const row = btn.closest('tr');
+            row.remove();
+        }
+
+        // 添加单条数据
+        function addSingleEntry() {
+            const year = document.getElementById('inputYear').value;
+            const month = document.getElementById('inputMonth').value;
+            const price = document.getElementById('inputPrice').value;
+            
+            if (!price || parseFloat(price) <= 0) {
+                showAlert('请输入有效的租金金额', 'error');
+                return;
+            }
+            
+            const monthStr = `${year}-${String(month).padStart(2, '0')}`;
+            
+            // 检查是否已存在相同月份
+            const tbody = document.getElementById('editableTableBody');
+            const existingRows = tbody.querySelectorAll('tr');
+            let found = false;
+            
+            for (const row of existingRows) {
+                const monthInput = row.querySelector('.month-input');
+                if (monthInput.value === monthStr) {
+                    // 更新现有行
+                    row.querySelector('.price-input').value = price;
+                    found = true;
+                    showAlert(`已更新 ${monthStr} 的数据`, 'success');
+                    break;
+                }
+            }
+            
+            if (!found) {
+                // 添加新行到表格顶部
+                const newRow = document.createElement('tr');
+                newRow.innerHTML = `
+                    <td><input type="month" value="${monthStr}" class="month-input"></td>
+                    <td><input type="number" value="${price}" min="0" step="100" class="price-input"></td>
+                    <td><button class="delete-row" onclick="deleteRow(this)">🗑️</button></td>
+                `;
+                tbody.insertBefore(newRow, tbody.firstChild);
+                showAlert(`已添加 ${monthStr} 的数据`, 'success');
+            }
+            
+            // 清空输入
+            document.getElementById('inputPrice').value = '';
+        }
+
+        // 保存手动填报的数据
+        function saveManualData() {
+            const tbody = document.getElementById('editableTableBody');
+            const rows = tbody.querySelectorAll('tr');
+            const data = [];
+            
+            for (const row of rows) {
+                const month = row.querySelector('.month-input').value;
+                const price = parseFloat(row.querySelector('.price-input').value);
+                
+                if (month && !isNaN(price) && price > 0) {
+                    data.push({ month, price: Math.round(price) });
+                }
+            }
+            
+            if (data.length === 0) {
+                showAlert('没有有效的数据可保存', 'error');
+                return;
+            }
+            
+            const deviceType = document.getElementById('deviceType').value;
+            const region = document.getElementById('region').value;
+            
+            if (saveToStorage(deviceType, region, data)) {
+                showAlert(`成功保存 ${data.length} 条数据`, 'success');
+                updateChart();
+                updateDataStatus();
+            } else {
+                showAlert('保存数据失败', 'error');
+            }
+        }
+
+        // 显示清除确认弹窗
+        function showClearConfirm() {
+            document.getElementById('clearConfirmModal').classList.add('show');
+        }
+
+        // 隐藏清除确认弹窗
+        function hideClearConfirm() {
+            document.getElementById('clearConfirmModal').classList.remove('show');
+        }
+
+        // 清除自定义数据
+        function clearCustomData() {
+            const deviceType = document.getElementById('deviceType').value;
+            const region = document.getElementById('region').value;
+            
+            if (removeCustomData(deviceType, region)) {
+                showAlert('已清除自定义数据，恢复使用模拟数据', 'success');
+                hideClearConfirm();
+                updateChart();
+                updateDataStatus();
+                loadCurrentData();
+            } else {
+                showAlert('清除数据失败', 'error');
+            }
+        }
+
+        // ==================== 初始化 ====================
+        document.getElementById('deviceType').addEventListener('change', function() {
+            updateChart();
+            updateDataStatus();
+            loadCurrentData();
+        });
+        document.getElementById('region').addEventListener('change', function() {
+            updateChart();
+            updateDataStatus();
+            loadCurrentData();
+        });
+        
         // 初始化
-        document.getElementById('deviceType').addEventListener('change', updateChart);
-        document.getElementById('region').addEventListener('change', updateChart);
+        initYearSelector();
+        initDragDrop();
         updateChart();
+        updateDataStatus();
+        
+        // 延迟加载编辑表格数据（确保DOM已就绪）
+        setTimeout(loadCurrentData, 100);
     </script>
 </body>
 </html>
